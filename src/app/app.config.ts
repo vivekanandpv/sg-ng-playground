@@ -9,6 +9,9 @@ import { routes } from './app.routes';
 import { NumberService } from './number.service';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { loggerInterceptor } from './logger.interceptor';
+import { provideToastr } from 'ngx-toastr';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { secondInterceptor } from './second.interceptor';
 
 export const NUMBER_SERVICE = new InjectionToken<NumberService>(
   'Number Service'
@@ -22,6 +25,8 @@ export const appConfig: ApplicationConfig = {
       provide: NUMBER_SERVICE,
       useFactory: () => new NumberService('Hello, world! from factory'),
     },
-    provideHttpClient(withInterceptors([loggerInterceptor])),
+    provideHttpClient(withInterceptors([loggerInterceptor, secondInterceptor])),
+    provideToastr(),
+    provideAnimations(),
   ],
 };
