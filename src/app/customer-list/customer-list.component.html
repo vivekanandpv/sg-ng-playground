@@ -1,0 +1,23 @@
+<h4>Customers</h4>
+<table class="table table-bordered table-sm table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (customer of customers; track customer.id) {
+    <tr (click)="onCustomerSelect(customer)">
+      <td>{{ customer.id }}</td>
+      <td>{{ customer.firstName }}</td>
+      <td>{{ customer.lastName }}</td>
+      <td>{{ customer.email }}</td>
+      <td>{{ customer.city }}</td>
+    </tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,74 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Ludovico",
+      "lastName": "Flips",
+      "email": "lflips0@washingtonpost.com",
+      "city": "Moreno"
+    },
+    {
+      "id": 2,
+      "firstName": "Langsdon",
+      "lastName": "Casado",
+      "email": "lcasado1@columbia.edu",
+      "city": "Bù Đốp"
+    },
+    {
+      "id": 3,
+      "firstName": "Jamey",
+      "lastName": "Ianinotti",
+      "email": "jianinotti2@opensource.org",
+      "city": "Nový Malín"
+    },
+    {
+      "id": 4,
+      "firstName": "Osgood",
+      "lastName": "Edwinson",
+      "email": "oedwinson3@ning.com",
+      "city": "Umeå"
+    },
+    {
+      "id": 5,
+      "firstName": "Theodor",
+      "lastName": "Ingon",
+      "email": "tingon4@tamu.edu",
+      "city": "Warmare"
+    },
+    {
+      "id": 6,
+      "firstName": "Ruthy",
+      "lastName": "Rosenau",
+      "email": "rrosenau5@bloglines.com",
+      "city": "Bojonegoro"
+    },
+    {
+      "id": 7,
+      "firstName": "Doloritas",
+      "lastName": "De Ortega",
+      "email": "ddeortega6@nymag.com",
+      "city": "Oliveira de Baixo"
+    },
+    {
+      "id": 8,
+      "firstName": "Barbie",
+      "lastName": "Hamstead",
+      "email": "bhamstead7@youku.com",
+      "city": "Wates"
+    },
+    {
+      "id": 9,
+      "firstName": "Andree",
+      "lastName": "Benedito",
+      "email": "abenedito8@yelp.com",
+      "city": "Vân Đình"
+    },
+    {
+      "id": 10,
+      "firstName": "Eileen",
+      "lastName": "Rollings",
+      "email": "erollings9@patch.com",
+      "city": "Thessaloníki"
+    }
+  ]
+}

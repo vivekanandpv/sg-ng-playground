@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col">
+    <ng-container *ngIf="customers$ | async as customers">
+      <app-customer-list
+        [customers]="customers"
+        (customerSelected)="handleCustomerSelection($event)"
+      ></app-customer-list>
+    </ng-container>
+  </div>
+  <div class="col">
+    <app-customer-detail [customer]="selectedCustomer()"></app-customer-detail>
+  </div>
+</div>
