@@ -1,0 +1,8 @@
+<h4>Book Details</h4>
+<ng-container *ngIf="book$ | async as book">
+  <p>Id: {{ book.id }}</p>
+  <p>Title: {{ book.title }}</p>
+  <p>Pages: {{ book.pages }}</p>
+  <p>Price: {{ book.price | currency : "INR" }}</p>
+  <p>Edition: {{ book.edition }}</p>
+</ng-container>

@@ -12,6 +12,8 @@ import { loggerInterceptor } from './logger.interceptor';
 import { provideToastr } from 'ngx-toastr';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { secondInterceptor } from './second.interceptor';
+import { provideStore } from '@ngrx/store';
+import { bookReducer } from './features/book/book.feature';
 
 export const NUMBER_SERVICE = new InjectionToken<NumberService>(
   'Number Service'
@@ -28,5 +30,8 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withInterceptors([loggerInterceptor, secondInterceptor])),
     provideToastr(),
     provideAnimations(),
+    provideStore({
+      bookFeature: bookReducer,
+    }),
   ],
 };
